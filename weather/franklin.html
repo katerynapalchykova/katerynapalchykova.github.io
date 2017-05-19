@@ -1,58 +1,65 @@
 <!doctype html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>Franklin, ID | Weather </title>
-        <meta name="description" content="Short Description of the page.">
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-        <header>
-            <h1>&#9746;&#9746;Feeling Lucky?</h1>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Franklin, ID | Weather </title>
+    <meta name="description" content="Short Description of the page.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/weather/franklinlayout.css">
+</head>
+
+<body id="navbottom">
+    <header id="header">
+        <img src="logo-blue.jpg" alt="weather logo" width="350">
+        <div id="movetoright">
             <h2>Local Weather</h2>
-        </header>
-        <nav>
+        </div>
+    </header>
+    <nav id="nav">
+        <ul id="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <h3 id="movecenter">&#9746;Franklin, ID</h3>
+        <ul>
+            <li>&#9746;"High": 17, "Low": 3,</li>
+            <li>Sunny</li>
+        </ul>
+        <ul>
+            <li>
+                <h3>&#9746;Current Conditions</h3>
+            </li>
+            <li>
+                <h3>Wind</h3>1-5 MPH Southwest</li>
+            <li>
+                <h3>Precipitation</h3> 0in</li>
+
+        </ul>
+        <div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Franklin</a></li>
-                <li><a href="#">Greenville</a></li>
-                <li><a href="#">Springfield</a></li>
-                <li><a href="#">Search</a></li>
+                <h3>&#9746;Hourly Forecast</h3>
+                <li>8:00 AM : 67</li>
+                <li>8:00 AM : 67</li>
+                <li>8:00 AM : 67</li>
+                <li>8:00 AM : 67</li>
             </ul>
-        </nav>
-        <main>
-            <div>
-                <ul>
-                    <li><h3>&#9746;Current Conditions</h3></li>
-                    <li><h3>Wind</h3>1-5 MPH Southwest</li>
-                    <li><h3>Precipitation</h3> 0in</li>
 
-                </ul>
-            </div>
-            <div>
-            <ul>
-                <li><h3>&#9746;Franklin, ID</h3></li>
-                <li>&#9746;"High": 17,
-                    "Low": 3,</li>
-                <li>Sunny</li>
-                </ul>
+        </div>
 
-                <ul><h3>&#9746;Hourly Forecast</h3>
-                <li>8:00 AM : 67</li>
-                <li>8:00 AM : 67</li>
-                <li>8:00 AM : 67</li>
-                <li>8:00 AM : 67</li>
-                </ul>
+    </main>
+    <footer id=footer>
+        <ul>
+            <li><a href="#" title="Go to home page">Home</a></li>
+        </ul>
+        &copy;2017 Weather Site.
+    </footer>
 
-            </div>
+</body>
 
-        </main>
-        <footer>
-            <ul>
-                <li><a href="#" title="Go to home page">Home</a></li>
-            </ul>
-            &copy;2017 Weather Site.
-        </footer>
-
-    </body>
 </html>
