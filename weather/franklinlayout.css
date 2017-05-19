@@ -1,7 +1,9 @@
-
-* { margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+* {
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; /* changes width property
+    box-sizing: border-box;
+    /* changes width property
     to total width instead of content width */
 }
 
@@ -14,15 +16,19 @@ section,
 main,
 figcaption,
 figure {
-    display: block; /* just in case we have
+    display: block;
+    /* just in case we have
     any older browsers that don't recognize
     the HTML5 semantic elements */
 }
 
 body {
-    margin: 0; /* remove any margin from body */
-    padding: 0; /* ditto for padding */
+    margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+    /* ditto for padding */
     background-color: salmon;
+    font-size: 20px;
 }
 
 #movetoright {
@@ -31,42 +37,57 @@ body {
     margin-top: .25em;
     margin-right: 1em;
 }
+
 #movecenter {
-   text-align: center;
+    text-align: center;
 }
+
 h2,
-h3{
+h3 {
     margin: 0;
     padding: 0;
-
+    font-family: Sansita;
+    "second-choise": generic-family;
 }
+
 ul li {
     list-style: none;
 }
-#navlist{
+
+#navlist {
     display: flex;
     justify-content: space-around;
     border: solid black;
     padding: 1em;
     order: 2;
-
 }
+
 #navbottom {
     display: flex;
     flex-direction: column;
-
+    font-family: Helvetica;
 }
-#header{
+
+#header {
     order: 1;
 }
-#main{
+
+#main {
     order: 2;
+    background-image: url("/weather/sunny-winter.jpg");
+    background-size: cover;
 }
+
 #nav {
     order: 4;
 }
-#footer{
+
+#footer {
     order: 3;
 }
 
+header,
+footer {
+    background-color: #A6D8DB;
+}
 
