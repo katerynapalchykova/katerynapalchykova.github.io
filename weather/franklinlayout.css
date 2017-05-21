@@ -31,6 +31,13 @@ body {
     font-size: 20px;
 }
 
+
+/* this is to make hourly hidden */
+
+#hourly {
+    visibility: hidden;
+}
+
 #movetoright {
     display: flex;
     justify-content: flex-end;
@@ -53,13 +60,32 @@ h3 {
 ul li {
     list-style: none;
 }
-
+/* This is for the top box */
+#flexy {
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+    justify-content:center;
+}
+#flex-me {
+    justify-content: center;
+}
+#try-me {
+    justify-content: center;
+}
 #navlist {
     display: flex;
     justify-content: space-around;
     border: solid black;
     padding: 1em;
     order: 2;
+    background-color: #F07C6C;
+}
+/* navigation links */
+
+#navlist a:link{
+    text-decoration: none;
+    color: lawngreen;
 }
 
 #navbottom {
@@ -76,18 +102,28 @@ ul li {
     order: 2;
     background-image: url("/weather/sunny-winter.jpg");
     background-size: cover;
+
 }
 
 #nav {
-    order: 4;
+    order: 5;
 }
 
 #footer {
-    order: 3;
+    order: 4;
+}
+#currentConditions {
+    border: 1px solid;
+    color: black;
+    margin: .2em auto;
+    text-align: center;
+    margin-top:2em;
+    background-color: rgba(200,200,200,.6);
+    border-radius: 5px;
+
 }
 
 header,
 footer {
     background-color: #A6D8DB;
 }
-
