@@ -86,12 +86,14 @@ ul li {
 #navlist a:link{
     text-decoration: none;
     color: lawngreen;
+    word-spacing: normal;
 }
-
+/* navigation bar */
 #navbottom {
     display: flex;
     flex-direction: column;
     font-family: Helvetica;
+    word-spacing: normal;
 }
 
 #header {
