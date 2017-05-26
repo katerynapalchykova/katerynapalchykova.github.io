@@ -181,19 +181,23 @@
                     }
                     #currentConditions {
                         height: 100%;
-                        padding-bottom: 8em;
+                        padding-bottom: 9.6em;
                         padding-top: 8em;
                         margin: 0;
                         width: 33%;
                         background: lightgreen;
                     }
                     #hourly {
+                        display: flex;
                         visibility: visible;
                         border: 1px solid;
                         width: 33%;
                         padding-top: 8em;
                         padding-bottom: 8em;
                         background: lightgreen;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-align: center;
                     }
                     #swap {
                         display: flex;
@@ -214,9 +218,7 @@
                         justify-content: center;
                         flex-direction: column;
                     }
-                    #sunny {
-                        padding-left: 8em;
-                    }
+
                 li {
                     list-style: none;
                     }
