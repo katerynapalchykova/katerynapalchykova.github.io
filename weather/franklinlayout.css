@@ -1,227 +1,219 @@
-                @import url('https://fonts.googleapis.com/css?family=Sansita');
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                /* changes width property
+                    @import url('https://fonts.googleapis.com/css?family=Sansita');
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    /* changes width property
     to total width instead of content width */
-            }
+                }
 
-            article,
-            aside,
-            footer,
-            header,
-            nav,
-            section,
-            main,
-            figcaption,
-            figure {
-                display: block;
-                /* just in case we have
+                article,
+                aside,
+                footer,
+                header,
+                nav,
+                section,
+                main,
+                figcaption,
+                figure {
+                    display: block;
+                    /* just in case we have
     any older browsers that don't recognize
     the HTML5 semantic elements */
-            }
-
-            body {
-                margin: 0;
-                /* remove any margin from body */
-                padding: 0;
-                /* ditto for padding */
-                background-color: salmon;
-                font-size: 20px;
-            }
-            /* this is to make hourly hidden */
-
-            #hourly {
-                visibility: hidden;
-            }
-
-            #movetoright {
-                display: flex;
-                justify-content: flex-end;
-                margin-top: .25em;
-                margin-right: 1em;
-            }
-
-            #movecenter {
-                text-align: center;
-            }
-
-            h2,
-            h3 {
-                margin: 0;
-                padding: 0;
-                font-family: Sansita;
-            }
-
-            ul li {
-                list-style: none;
-            }
-            /* This is for the top box */
-
-            #flexy {
-                display: flex;
-                border: 1px solid black;
-                text-align: center;
-                justify-content: center;
-            }
-
-            #flex-me {
-                justify-content: center;
-            }
-
-            #try-me {
-                justify-content: center;
-            }
-
-            #navlist {
-                display: flex;
-                justify-content: space-around;
-                border: solid black;
-                padding: 1em;
-                order: 2;
-                background-color: #F07C6C;
-            }
-            /* navigation links */
-
-            #navlist a:link {
-                text-decoration: none;
-                color: lawngreen;
-                word-spacing: normal;
-                font-size: .75em;
-            }
-            /* navigation bar */
-
-            #navbottom {
-                display: flex;
-                flex-direction: column;
-                font-family: Helvetica;
-                word-spacing: normal;
-            }
-
-            #header {
-                order: 1;
-            }
-
-            #main {
-                display: flex;
-                order: 2;
-                background-image: url("/weather/sunny-winter.jpg");
-                background-size: cover;
-                flex-direction: column;
-            }
-
-            #nav {
-                order: 5;
-            }
-
-            #footer {
-                order: 4;
-            }
-
-            #currentConditions {
-                border: 1px solid;
-                color: black;
-                margin: .2em auto;
-                text-align: center;
-                margin-top: 2em;
-                background-color: rgba(200, 200, 200, .6);
-                border-radius: 5px;
-                order: 2;
-            }
-
-            #franklinbox {
-                order: 1;
-}
-
-            header,
-            footer {
-                background-color: #A6D8DB;
-            }
-
-            @media screen and (min-width:1000px) {
-                .html {
-                    direction: ltr;
                 }
-                /* the main container (body)*/
-                #navbottom {
-                    display: flex;
+
+                body {
+                    margin: 0;
+                    /* remove any margin from body */
+                    padding: 0;
+                    /* ditto for padding */
+                    background-color: salmon;
+                    font-size: 20px;
                 }
-                /* local weather header that needs to be inder "Franklin */
+                /* this is to make hourly hidden */
+
+                #hourly {
+                    visibility: hidden;
+                }
+
                 #movetoright {
                     display: flex;
-                    justify-content: flex-start;
-                    padding-bottom: 1em;
-                    margin-left: 10em;
-                    padding-top: .25em;
+                    justify-content: flex-end;
+                    margin-top: .25em;
+                    margin-right: 1em;
                 }
-                #nav {
-                    order: 2;
+
+                #movecenter {
+                    text-align: center;
                 }
-                #main {
-                    display: flex;
-                     justify-content: center;
-                    padding: 0;
-                    flex-direction: row-reverse;
-                }
-                #franklinbox {
 
-                    padding-top: 8em;
-                    border: 1px solid;
-                    width: 33%;
-                    padding-bottom: 8em;
-                    background-image: url("/weather/sunny-winter.jpg");
-                    background-size: cover;
-                    justify-content: center;
-
-
-
-                }
-                #currentConditions {
-                    height: 100%;
-                    padding-bottom: 8em;
-                    padding-top: 8em;
+                h2,
+                h3 {
                     margin: 0;
-                    width: 33%;
-                    background: lightgreen;
+                    padding: 0;
+                    font-family: Sansita;
                 }
-                #hourly {
-                    visibility: visible;
-                    border: 1px solid;
-                    width:33%;
-                    padding-top: 8em;
-                    padding-bottom: 8em;
-                    background: lightgreen;
+
+                ul li {
+                    list-style: none;
                 }
-                #swap {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    justify-content: space-around;
-                }
-                #navlist {
-                    font-size: 1.5em;
-                    padding: 1em;
-                    padding: .25em;
-                }
+                /* This is for the top box */
+
                 #flexy {
                     display: flex;
-                    margin-left: 3em;
-                    margin-right: 3em;
-                    padding-bottom: 1em;
-                    padding-top: 1em;
+                    border: 1px solid black;
+                    text-align: center;
                     justify-content: center;
+                }
+
+                #sunny {
+                    justify-content: center;
+                }
+
+                #flex-me {
+                    justify-content: center;
+                }
+
+                #try-me {
+                    justify-content: center;
+                }
+
+                #navlist {
+                    display: flex;
+                    justify-content: space-around;
+                    border: solid black;
+                    padding: 1em;
+                    order: 2;
+                    background-color: #F07C6C;
+                }
+                /* navigation links */
+
+                #navlist a:link {
+                    text-decoration: none;
+                    color: lawngreen;
+                    word-spacing: normal;
+                    font-size: .75em;
+                }
+                /* navigation bar */
+
+                #navbottom {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Helvetica;
+                    word-spacing: normal;
+                }
+
+                #header {
+                    order: 1;
+                }
+
+                #main {
+                    display: flex;
+                    order: 2;
+                    background-image: url("/weather/sunny-winter.jpg");
+                    background-size: cover;
                     flex-direction: column;
                 }
-                #sunny {
-                    padding-left: 8em;
+
+                #nav {
+                    order: 5;
                 }
-                /*li {
-                    list-style: none;
-                } */
 
+                #footer {
+                    order: 4;
+                }
 
+                #currentConditions {
+                    border: 1px solid;
+                    color: black;
+                    margin: .2em auto;
+                    text-align: center;
+                    margin-top: 2em;
+                    background-color: rgba(200, 200, 200, .6);
+                    border-radius: 5px;
+                    order: 2;
+                }
 
+                #franklinbox {
+                    order: 1;
+                }
 
+                header,
+                footer {
+                    background-color: #A6D8DB;
+                }
 
-
-
+                @media screen and (min-width:1000px) {
+                    .html {
+                        direction: ltr;
+                    }
+                    /* the main container (body)*/
+                    #navbottom {
+                        display: flex;
+                    }
+                    /* local weather header that needs to be inder "Franklin */
+                    #movetoright {
+                        display: flex;
+                        justify-content: flex-start;
+                        padding-bottom: 1em;
+                        margin-left: 10em;
+                        padding-top: .25em;
+                    }
+                    #nav {
+                        order: 2;
+                    }
+                    #main {
+                        display: flex;
+                        justify-content: center;
+                        padding: 0;
+                        flex-direction: row-reverse;
+                    }
+                    #franklinbox {
+                        padding-top: 8em;
+                        border: 1px solid;
+                        width: 33%;
+                        padding-bottom: 8em;
+                        background-image: url("/weather/sunny-winter.jpg");
+                        background-size: cover;
+                        justify-content: center;
+                    }
+                    #currentConditions {
+                        height: 100%;
+                        padding-bottom: 8em;
+                        padding-top: 8em;
+                        margin: 0;
+                        width: 33%;
+                        background: lightgreen;
+                    }
+                    #hourly {
+                        visibility: visible;
+                        border: 1px solid;
+                        width: 33%;
+                        padding-top: 8em;
+                        padding-bottom: 8em;
+                        background: lightgreen;
+                    }
+                    #swap {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: space-around;
+                    }
+                    #navlist {
+                        font-size: 1.5em;
+                        padding: 1em;
+                        padding: .25em;
+                    }
+                    #flexy {
+                        display: flex;
+                        margin-left: 3em;
+                        margin-right: 3em;
+                        padding-bottom: 1em;
+                        padding-top: 1em;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                    #sunny {
+                        padding-left: 8em;
+                    }
+                li {
+                    list-style: none;}
