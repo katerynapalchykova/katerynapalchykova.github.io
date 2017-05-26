@@ -1,0 +1,41 @@
+/* to move a frog to lily pad */
+# pond {
+display: flex;
+    justify-content: flex-end;
+}
+
+/* html looks like */
+<div id="pond">
+/* html looks like (display flex0) */
+<div parent
+
+/* display flex box in css */
+.parent {
+    display: flex;
+    /* starts horizontaly from the right to the left */
+    flex-direction: row-reverse;
+
+    /* from the top to the bottom */
+    flex-direction: column;
+
+    /* */
+    flex-wrap: nowrap;
+
+    /*you can shift the whole context */
+    justify-content: center;
+
+    /*space between words */
+    justify-content: space-around;
+
+    /* shift the whole context to the bottom, make it strech, */
+    align-items: flex-end;
+    align-items: stretch;
+    align-items: baseline;
+
+    /*  */
+    align-content: space-between;
+    flex-direction: column;
+}
+.item {
+    width: 50px
+}
