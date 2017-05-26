@@ -67,7 +67,7 @@
                 }
 
                 #sunny {
-                    justify-content: center;
+                  text-align: center;
                 }
 
                 #flex-me {
@@ -136,6 +136,8 @@
 
                 #franklinbox {
                     order: 1;
+                    display: flex;
+                    flex-direction: column;
                 }
 
                 header,
@@ -216,4 +218,5 @@
                         padding-left: 8em;
                     }
                 li {
-                    list-style: none;}
+                    list-style: none;
+                    }
