@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="html" lang="en-us">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Franklin, ID | Weather </title>
+        <meta name="Franklin weather site" content="Provides the latest data about climate changes in the city of Franklin, ID.">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="weather/franklinlayout.css">
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+
+        <script src="jsonweather-html/jsonweather-html/scripts/remote_wu.js"></script>
+
+
+    </head>
+
+    <body id="navbottom">
+        <header id="header">
+            <img src="logo-blue.jpg" alt="weather logo" width="350">
+            <div id="movetoright">
+                <h2 id="localweather"> Local Weather</h2>
+            </div>
+        </header>
+        <nav id="nav">
+            <ul id="navlist">
+                <li><a href="/weather/franklin.html">Home</a></li>
+                <li><a href="/weather/franklin.html">Franklin</a></li>
+                <li><a href="/weather/greenville.html">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+
+            <ul id="currentConditions">
+                <li>
+                    <h3>&#9746;Current Conditions</h3>
+                </li>
+                <li>
+                    <h3>Wind</h3><span class = "add1"></span></li>
+                <li>
+                    <h3>Precipitation</h3><span class = "add2"></span> </li>
+
+            </ul>
+
+            <div id="franklinbox">
+                <h3 id="movecenter" class = "cityDisplay"></h3>
+                <div id="flexy">
+                    <ul>
+                        <li>
+                            <h2 id="try-me" class = "currentTemp"></h2>
+                        </li>
+                        <li>&#9746; 17/3</li>
+                    </ul>
+                </div>
+                <h3 id="sunny" class = "summary"></h3>
+            </div>
+
+
+            <div id="hourly">
+                <h3 id="hourlyForecast">&#9746;Hourly Forecast</h3>
+                <ul>
+                    <li>8:00 AM : 67</li>
+                    <li>8:00 AM : 67</li>
+                    <li>8:00 AM : 67</li>
+                    <li>8:00 AM : 67</li>
+                </ul>
+
+            </div>
+
+        </main>
+        <footer id=footer>
+            <ul>
+                <li><a href="#" title="Go to home page">Home</a></li>
+            </ul>
+
+            &copy;2017 Weather Site.
+        </footer>
+
+    </body>
+
+</html>
