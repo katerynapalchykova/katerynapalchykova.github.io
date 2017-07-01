@@ -10,7 +10,7 @@ $('#query').keyup(function() {
         $.each(data.RESULTS, function(key, val) {
             if (val.name.search(rExp) != -1) {
                 output += '<li>';
-                output += '<a href="//www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+                output += '<a href="//www.wunderground.com"' + ' onclick="getData(' + val.lat + ',' + val.lon + ')"' + ' title="See results for ' + val.name + '">' + val.name + '</a>';
                 output += '</li>';
             }
         }); // end each
@@ -22,19 +22,22 @@ $('#query').keyup(function() {
 
 $("#searchResults").on("click", "a", function (evt) {
     evt.preventDefault();
-    $()
+//    $()
     // With the text value get the needed value from the weather.json file
     var jsonCity = $(this).text(); // Franklin, etc...
     console.log(jsonCity);
     index = $(this).index("a");
 
-    getData(returned.RESULTS[index].zmw)
+//    getData(returned.RESULTS[index].zmw);
+    getData(index.lat, index.lon);
 
-    document.getElementById('searchResults').style.display='none';
+
+    $('#searchResults').hide();
+//    document.getElementById('searchResults').style.display='none';
 });
-function getData(data){
+function getData(lat, lon){
     $.ajax({
-        url:"https://api.wunderground.com/api/a8791e5a6a538fa0/geolookup/conditions/q/" + data + ".json",
+        url:"https://api.wunderground.com/api/a8791e5a6a538fa0/geolookup/conditions/q/" + lat + ',' + lon + ".json",
         dataType : "jsonp",
         success : function(parsed_json) {
             var location = parsed_json['location']['city'];
@@ -50,7 +53,7 @@ function getData(data){
 
             $("#cover").fadeOut(250);
 
-            console.log(data);
+            console.log(parsed_json);
         }
 
     });
