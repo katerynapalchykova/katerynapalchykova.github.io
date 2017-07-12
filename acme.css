@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+
+/*font-family: 'Boogaloo', cursive;*/
+
+#navlist {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 1em;
+    padding: .25em;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    padding: 1em;
+    order: 2;
+    background-color:#de2226;
+    list-style-type: none;
+}
+
+
+}
+#body {
+    background-image: url(../images/site/background.jpg)
+
+}
