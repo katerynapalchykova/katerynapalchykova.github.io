@@ -397,4 +397,7 @@ noscript {
     text-align: center;
 }
 
-#menu {}
+#template {
+    font-size: 34px;
+}
+
