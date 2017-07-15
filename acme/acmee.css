@@ -1,12 +1,14 @@
+
 #body {
     display: flex;
-    font-family: sans-serif;
+
     /*    font-size: 18px;*/
     background-image: url(images/site/background.jpg);
     background-size: cover;
     max-width: 1100px;
     align-content: center;
     margin: auto;
+    font-family: 'Chelsea Market', cursive;
 }
 
 #page {

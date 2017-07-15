@@ -1,0 +1,604 @@
+
+body, html { overflow-x:hidden;
+    max-width:100%
+}
+
+#body {
+    display: flex;
+
+    /*    font-size: 18px;*/
+    background-image: url('images/site/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 20px;
+/*    width: 100%;*/
+
+}
+
+#page {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 15px;
+    width: 95%;
+}
+
+#welcome {
+/*
+    text-align: left;
+    margin: 0.20em 0;
+    font-size: 20px;
+*/
+    margin-left: 16px;
+}
+
+.content {
+    width: auto;
+}
+
+
+.main-picture {
+    background-image: url('images/site/feature.jpg');
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #990033;
+    padding-right: 0;
+}
+
+.main-picture img {
+    max-width: 100px;
+}
+
+.rocket {
+/*
+    height: 35px;
+    padding-right: 20px;
+*/
+}
+
+#rocket-header {
+    font-size: 15px;
+}
+
+.rocket-list {
+    font-size: 12px;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+/*
+.content h1 {
+    font-size: 20px;
+    text-align: center;
+}
+*/
+
+#nav {
+    background-color: #de2226;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#nav ul {
+    display: flex;
+    align-items: stretch;
+    height: 2.5em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav a:hover {
+    background-color: #808080;
+    color: #000;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper div {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    text-align: center;
+}
+
+.wrapper div img {
+    width: 70px;
+    margin: 0 auto;
+}
+
+#featured {
+    margin-left: 16px;
+}
+
+#reviews {
+    width: 370px;
+}
+
+#reviews h3 {
+    margin-top: -14px;
+    margin-bottom: -10px;
+}
+
+.article {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#recipes {
+    /*width: 500px;*/
+
+}
+
+#recipes h3 {
+    margin: 5px 0 -5px 0;
+}
+
+#recipe-content {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    /*    flex-grow: 1;*/
+    width: 25em;
+}
+
+.food {
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-bottom-width: 4px;
+    border-color: lightgray;
+    border-style: solid;
+    width: 5em;
+}
+
+figure {
+    width: 30%;
+    text-align: center;
+    margin: 8px;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+.secondary_header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ff0000;
+    clear: left;
+}
+
+.left_article {
+    background-color: #FFFFFF;
+    width: 60%;
+    float: left;
+    font-family: "Source Sans Pro";
+    color: #343434;
+    padding-bottom: 15px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.container .left_article h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    color: #717070;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.right_article {
+    width: 40%;
+    float: left;
+    background-color: #ffffff;
+}
+
+#product-content {
+    display: flex;
+}
+
+#prod-description {
+    height: 300px;
+    background-repeat: no-repeat;
+    list-style: none;
+    justify-content: flex-end;
+    margin-left: 8%;
+    padding-right: 8%
+}
+
+#product-zone {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+}
+
+#product-content h1 {
+    font-size: 40px;
+}
+
+#prod-image {
+    height: 500px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 33%;
+}
+
+#page-footer {
+    background-color: #fff;
+    color: #000000;
+    padding: 0 .5em;
+    margin-bottom: 2.5em;
+    font-size: 12px;
+    text-align: center;
+}
+
+#page-footer p {
+    margin: 0;
+}
+
+noscript {
+    color: #fff;
+}
+
+.column_title {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #990033;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+    font-family: "Source Sans Pro";
+}
+
+}
+
+/*Large Screen*/
+@media only screen and (min-width: 750px) {
+    
+    
+
+/*
+    #body {
+        display: flex;
+
+            font-size: 18px;
+        background-image: url('images/site/background.jpg');
+        background-size: cover;
+        max-width: 1100px;
+        align-content: center;
+        margin: auto;
+        font-family: 'Chelsea Market', cursive;
+    }
+
+    #page {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        margin: 3%;
+        background-color: #fff;
+        margin: 0 auto;
+        width: 80%;
+        min-width: 600px;
+    }
+
+    #welcome {
+        text-align: left;
+        margin: 0.25em 0;
+    }
+
+    .content {
+        width: auto;
+    }
+
+    .main-picture {
+        background-image: url('images/site/feature.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 950px;
+        color: #990033;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main-picture img {
+        max-width: 227px;
+*/
+/*
+    }
+
+    .rocket {
+        height: 350px;
+        padding-right: 20px;
+    }
+
+    #rocket-header {
+        font-size: 25px;
+    }
+
+    .rocket-list {
+        font-size: 24px;
+        list-style: none;
+        padding-left: 0;
+
+    }
+
+    .content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #nav {
+        background-color: #de2226;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+*/
+
+/*
+    #nav ul {
+        display: flex;
+        align-items: stretch;
+        height: 2.5em;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #nav li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    #nav a {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #nav a:hover {
+        background-color: #808080;
+        color: #000;
+    }
+*/
+
+/*
+    .wrapper {
+        display: flex;
+    }
+
+    .wrapper div {
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        text-align: center;
+    }
+
+    .wrapper div img {
+        width: 70px;
+        margin: 0 auto;
+    }
+
+    #reviews {
+        width: 370px;
+    }
+
+    #reviews h3 {
+        margin-top: -14px;
+        margin-bottom: -10px;
+    }
+
+    .article {
+        display: flex;
+        flex-flow: row wrap;
+*/
+/*
+    }
+
+    #recipes {
+        width: 500px;
+
+    }
+
+    #recipes h3 {
+        margin: 5px 0 -5px 0;
+    }
+*/
+
+/*
+    #recipe-content {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+            flex-grow: 1;
+        width: 25em;
+    }
+*/
+
+/*
+    .food {
+        border-left-width: 20px;
+        border-right-width: 20px;
+        border-bottom-width: 4px;
+        border-color: lightgray;
+        border-style: solid;
+        width: 5em;
+    }
+
+    figure {
+        width: 30%;
+        text-align: center;
+        margin: 8px;
+    }
+
+    .container {
+        background-color: #FFFFFF;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom-width: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .secondary_header {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #ff0000;
+        clear: left;
+    }
+
+    .left_article {
+        background-color: #FFFFFF;
+        width: 60%;
+        float: left;
+        font-family: "Source Sans Pro";
+        color: #343434;
+        padding-bottom: 15px;
+    }
+
+    .noDisplay {
+        display: none;
+    }
+
+    .container .left_article h1 {
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 5%;
+        color: #717070;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+*/
+/*
+
+    .right_article {
+        width: 40%;
+        float: left;
+        background-color: #ffffff;
+    }
+
+    #product-content {
+        display: flex;
+    }
+
+    #prod-description {
+        height: 300px;
+        background-repeat: no-repeat;
+        list-style: none;
+        justify-content: flex-end;
+        margin-left: 8%;
+        padding-right: 8%
+    }
+
+    #product-zone {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 3;
+    }
+
+    #product-content h1 {
+        font-size: 40px;
+    }
+
+    #prod-image {
+        height: 500px;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 33%;
+    }
+
+    #page-footer {
+        background-color: #fff;
+        color: #000000;
+        padding: 0 .5em;
+        margin-bottom: 2.5em;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #page-footer p {
+        margin: 0;
+    }
+
+    noscript {
+        color: #fff;
+    }
+
+    .column_title {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .copyright {
+        text-align: center;
+        background-color: #990033;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        border-top-width: 2px;
+        font-family: "Source Sans Pro";
+    }
+*/
+
+}
+
+
+
