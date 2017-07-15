@@ -277,7 +277,7 @@ noscript {
     font-family: "Source Sans Pro";
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) {
     .secondary_header ul li {
         float: none;
         margin-top: 28px;
@@ -384,7 +384,7 @@ noscript {
     }
 }
 
-@media (min-width: 1001px) {}
+@media (min-width: 1001px) {
 
 .thumbnail {
     width: 100px;
@@ -399,5 +399,6 @@ noscript {
 
 #template {
     font-size: 34px;
+}
 }
 
